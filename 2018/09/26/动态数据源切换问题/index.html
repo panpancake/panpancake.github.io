@@ -51,7 +51,7 @@
 
 
 
-  <title> 年终小记 · Personal Page </title>
+  <title> 动态数据源切换问题 · Personal Page </title>
 </head>
 <body>
   <div class="progress">
@@ -227,7 +227,7 @@
     <header class="post-header">
       <div class="post-time syuanpi riseIn-light back-1">
         <div class="post-time-wrapper">
-          <span>2018-02-08</span>
+          <span>2018-09-26</span>
           
           
             
@@ -236,19 +236,14 @@
       </div>
       <h1 class="post-title syuanpi riseIn-light back-2">
         
-          年终小记
+          动态数据源切换问题
         
       </h1>
     </header>
     <div class="post-content syuanpi riseIn-light back-3">
       
-        <p>It’s end of china year and a begin of calander year, that I decide to write something down about my life, my work or something else. This blog is not mean to be watched by public, but still thanks all of your attention.</p>
-<h2 id="Look-backward-at-2017"><a href="#Look-backward-at-2017" class="headerlink" title="Look backward at 2017"></a>Look backward at 2017</h2><h3 id="To-be-tough-and-sincere"><a href="#To-be-tough-and-sincere" class="headerlink" title="To be tough and sincere"></a>To be tough and sincere</h3><p>The bigest different from forward year is that I’m growing more independent.</p>
-<a id="more"></a>
-<h3 id="Busy-work"><a href="#Busy-work" class="headerlink" title="Busy work"></a>Busy work</h3><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Develop-own-hobbies"><a href="#Develop-own-hobbies" class="headerlink" title="Develop own hobbies"></a>Develop own hobbies</h3><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h2 id="What-happened-in-2017-remains-in-2017"><a href="#What-happened-in-2017-remains-in-2017" class="headerlink" title="What happened in 2017 remains in 2017"></a>What happened in 2017 remains in 2017</h2>
+        <p>早前在做需求的时候，需要在同一事务中切换所使用的数据源，调试时发现通过注解方式切的数据源的Mybatis执行时并没有被切换，而使用ibatis时重写了DAO层则没有这种问题，网上查到原因是事务和数据源是绑定的,当你在service层加上事务,你想在dao层切换数据源是不可以的,由于在进入该层之前事务已经通过拦截器开启，因此在该层切换数据源也是不行的。当时需求比较紧急，切换动态数据源的操作也并非必须，就避免了事务内切换数据源的操作。现特此总结一下该问题。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2>
       
     
     </div>
@@ -263,7 +258,7 @@
     </div>
     <div class="copy-url">
       <span>地址 :</span>
-      <a href="http://pancake.com/2018/02/08/first-try/">http://pancake.com/2018/02/08/first-try/</a>
+      <a href="http://pancake.com/2018/09/26/动态数据源切换问题/">http://pancake.com/2018/09/26/动态数据源切换问题/</a>
     </div>
     <div class="copy-origin">
       <span>来源 :</span>
@@ -281,12 +276,12 @@
     
   <nav class="article-page">
     
-      <a href="/2018/05/04/hello-world/" id="art-left" class="art-left">
-        <span class="next-title">
-          <i class="iconfont icon-left"></i>Hello World
+    
+      <a href="/2018/05/04/hello-world/" id="art-right" class="art-right">
+        <span class="prev-title"> 
+          Hello World<i class="iconfont icon-right"></i>  
         </span>
       </a>
-    
     
   </nav>
 
@@ -307,8 +302,8 @@
   <aside class="post-toc">
     <span class="title" id="toc-switch"><span>文章导航</span></span>
     <div class="toc-inner syuanpi back-1 fallIn-light">
-      <li class="title-link"><a href="javascript:;" class="toTop">年终小记</a></li>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Look-backward-at-2017"><span class="toc-text">Look backward at 2017</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#To-be-tough-and-sincere"><span class="toc-text">To be tough and sincere</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Busy-work"><span class="toc-text">Busy work</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Develop-own-hobbies"><span class="toc-text">Develop own hobbies</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What-happened-in-2017-remains-in-2017"><span class="toc-text">What happened in 2017 remains in 2017</span></a></li></ol>
+      <li class="title-link"><a href="javascript:;" class="toTop">动态数据源切换问题</a></li>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#原因"><span class="toc-text">原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方案"><span class="toc-text">解决方案</span></a></li></ol>
     </div>
   </aside>
 

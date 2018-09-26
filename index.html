@@ -234,27 +234,62 @@
     <header class="post-header">
       <div class="post-time syuanpi riseIn-light back-1">
         <div class="post-time-wrapper">
-          <span>2018-02-08</span>
+          <span>2018-09-26</span>
           
           
         </div>
       </div>
       <h1 class="post-title syuanpi riseIn-light back-2">
         
-          <a href="/2018/02/08/first-try/">年终小记</a>
+          <a href="/2018/09/26/动态数据源切换问题/">动态数据源切换问题</a>
         
       </h1>
     </header>
     <div class="post-content syuanpi riseIn-light back-3">
       
         
-          <p>It’s end of china year and a begin of calander year, that I decide to write something down about my life, my work or something else. This blog is not mean to be watched by public, but still thanks all of your attention.</p>
-<h2 id="Look-backward-at-2017"><a href="#Look-backward-at-2017" class="headerlink" title="Look backward at 2017"></a>Look backward at 2017</h2><h3 id="To-be-tough-and-sincere"><a href="#To-be-tough-and-sincere" class="headerlink" title="To be tough and sincere"></a>To be tough and sincere</h3><p>The bigest different from forward year is that I’m growing more independent.</p>
+          <p>早前在做需求的时候，需要在同一事务中切换所使用的数据源，调试时发现通过注解方式切的数据源的Mybatis执行时并没有被切换，而使用ibatis时重写了DAO层则没有这种问题，网上查到原因是事务和数据源是绑定的,当你在service层加上事务,你想在dao层切换数据源是不可以的,由于在进入该层之前事务已经通过拦截器开启，因此在该层切换数据源也是不行的。当时需求比较紧急，切换动态数据源的操作也并非必须，就避免了事务内切换数据源的操作。现特此总结一下该问题。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2>
+        
+      
+    
+    </div>
+    
+  </article>
+  
+   
+    
+  
+
+  
+    
+  <article class="
+  post
+  
+  ">
+    <header class="post-header">
+      <div class="post-time syuanpi riseIn-light back-1">
+        <div class="post-time-wrapper">
+          <span>2018-05-04</span>
+          
+          
+        </div>
+      </div>
+      <h1 class="post-title syuanpi riseIn-light back-2">
+        
+          <a href="/2018/05/04/hello-world/">Hello World</a>
+        
+      </h1>
+    </header>
+    <div class="post-content syuanpi riseIn-light back-3">
+      
+        
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
         
       
     
       <p class="content-link">
-        <a href="/2018/02/08/first-try/#more">
+        <a href="/2018/05/04/hello-world/#more">
           <span>继续阅读</span>
         </a>
       </p>
@@ -276,26 +311,27 @@
     <header class="post-header">
       <div class="post-time syuanpi riseIn-light back-1">
         <div class="post-time-wrapper">
-          <span>2018-01-31</span>
+          <span>2018-02-08</span>
           
           
         </div>
       </div>
       <h1 class="post-title syuanpi riseIn-light back-2">
         
-          <a href="/2018/01/31/hello-world/">Hello World</a>
+          <a href="/2018/02/08/first-try/">年终小记</a>
         
       </h1>
     </header>
     <div class="post-content syuanpi riseIn-light back-3">
       
         
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <p>It’s end of china year and a begin of calander year, that I decide to write something down about my life, my work or something else. This blog is not mean to be watched by public, but still thanks all of your attention.</p>
+<h2 id="Look-backward-at-2017"><a href="#Look-backward-at-2017" class="headerlink" title="Look backward at 2017"></a>Look backward at 2017</h2><h3 id="To-be-tough-and-sincere"><a href="#To-be-tough-and-sincere" class="headerlink" title="To be tough and sincere"></a>To be tough and sincere</h3><p>The bigest different from forward year is that I’m growing more independent.</p>
         
       
     
       <p class="content-link">
-        <a href="/2018/01/31/hello-world/#more">
+        <a href="/2018/02/08/first-try/#more">
           <span>继续阅读</span>
         </a>
       </p>
@@ -383,7 +419,7 @@
         
     
         
-            <a href="https://github.com/6" class="iconfont icon-github" title="github"></a>
+            <a href="https://github.com/panpancake/6" class="iconfont icon-github" title="github"></a>
         
         
         
